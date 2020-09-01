@@ -5,7 +5,7 @@ export default class Intro extends Component {
         return (
             <div>
                 <h1>Intro</h1>
-                <p>Blah blah blah grandy is so cool whaterver.</p>
+                <span className="math inline">$\overline B_p\simeq\sqrt{10}\,$</span>
             </div>
             
         )
