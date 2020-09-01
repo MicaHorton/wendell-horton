@@ -6,34 +6,34 @@ export default class Navbar extends Component {
     constructor (props) {
         super(props);
         this.state = {active: false};
-        this.openNav = this.openNav.bind(this);
-        this.closeNav = this.closeNav.bind(this);
+        this.toggleNav = this.toggleNav.bind(this);
     }
 
-    openNav() {
-        this.setState({overlay: true});
-
-    }
-
-    closeNav() {
-        this.setState({overlay: true});
-
+    toggleNav() {
+        this.setState({overlay: !this.state.overlay});
     }
 
     render () {
         return (
-            <div className='overlay'>
-                <div className='header'>
-                    <button className='toggle' onClick={() => this.openNav()}><i className='fa fa-bars'></i></button>
-                    <h1>Wendell Horton</h1>           
-                </div>
-
-                <nav className={this.state.overlay && 'overlay-active'}>
-                    <Link to='/intro'>Introduction</Link>
-                    <Link to='/chapter1'>Chapter 1</Link>
-                </nav>
-
+            <>
+            <div className={` overlay ${this.state.overlay && 'overlay-active'} `}></div>
+     
+            <div className='header'>
+                <button className='toggle' onClick={() => this.toggleNav()}>
+                    <i className={` ${!this.state.overlay && 'fa fa-bars'}  ${this.state.overlay && 'fa fa-times'} ${this.state.overlay && 'overlay-active'}`}></i>
+                </button>
+                <h1>Wendell Horton</h1>           
             </div>
+
+            
+            <nav className={` nav ${this.state.overlay && 'overlay-active'} `}>
+                <Link className='nav-item' to='/'>Introduction</Link>
+                <Link className='nav-item' to='/chapter1'>Chapter 1</Link>
+            </nav>
+
+            
+            </>
+      
              
         
 

@@ -10,8 +10,8 @@ function App() {
   return (
     <Router>
       <Route path='/' component={Navbar}/>
-      <Route path='/intro' component={Intro}/>
-      <Route path='/chapter1' component={Chapter1}/>
+      <Route path='/' exact component={Intro}/>
+      <Route path='/chapter1' exact component={Chapter1}/>
     </Router>
 
   );
