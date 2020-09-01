@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+    margin-top: 20px;
+}
+
+
+.header h1 {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 45px;
+
+    margin-top: 0;
+    padding: 0;
+
+}
+
+.toggle {
+    margin-left: 25px;
+   
+    height: 45px;
+    background: inherit;
+    border: 0;
+    padding: 0; 
+    margin-top: 0;
+}
+
+.toggle i {
+    font-size: 45px;
+
+    padding: 0; 
+    margin-top: 0;
+}
+
+/* Overlay Styles */
+
+
+nav:not(.overlay-active) {
+    display: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    font-size: inherit;
+    font-family: inherit;
+
+}

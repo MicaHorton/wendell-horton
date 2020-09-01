@@ -1,14 +1,19 @@
 import React from 'react';
+import { BrowserRouter as Router, Route} from "react-router-dom";
 import './App.css';
-var Latex = require('react-latex');
+
+import Navbar from "./components/navbar.js";
+import Intro from "./components/intro.js";
+import Chapter1 from "./components/chapter1.js";
 
 function App() {
   return (
-    <div>
- 
+    <Router>
+      <Route path='/' component={Navbar}/>
+      <Route path='/intro' component={Intro}/>
+      <Route path='/chapter1' component={Chapter1}/>
+    </Router>
 
-      
-    </div>
   );
 }
 
