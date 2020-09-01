@@ -92,3 +92,10 @@ body {
     background-color: rgb(96, 70, 70);
     z-index: 1;
 }
+
+/* Content Styling */
+
+.content {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}

@@ -4,7 +4,7 @@ import './App.css';
 
 import Navbar from "./components/navbar.js";
 import Intro from "./components/intro.js";
-import Chapter1 from "./components/chapter1.js";
+import Chapter4 from "./components/chapter4.js";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
     <Router>
       <Route path='/' component={Navbar}/>
       <Route path='/' exact component={Intro}/>
-      <Route path='/chapter1' exact component={Chapter1}/>
+      <Route path='/chapter4' exact component={Chapter4}/>
     </Router>
 
  
