@@ -99,3 +99,9 @@ body {
     margin-left: 10vw;
     margin-right: 10vw;
 }
+
+
+
+.MathJax:not(h3):not(h2) {
+    font-size: 30px;
+}
