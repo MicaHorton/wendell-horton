@@ -16,4 +16,3 @@
 - ES6 Script is the base for JavaScript and knockoffs like ActionScript or whatever. JavaScript is ovbiously the most popular one, so much so, people often use the terms interchangably. 
 - React uses JSX
 
-# CSS Ideass

@@ -93,15 +93,37 @@ body {
     z-index: 1;
 }
 
-/* Content Styling */
-
+/* Content Styles */
 .content {
     margin-left: 10vw;
     margin-right: 10vw;
 }
 
-
-
 .MathJax:not(h3):not(h2) {
-    font-size: 30px;
+    color: black;
+}
+
+/* Font Styles */
+@font-face {
+    font-family: baskerville;
+    src: url(media/LibreBaskerville-Regular.ttf);
+}
+
+@font-face {
+    font-family: hind-madurai;
+    src: url(media/HindMadurai-Medium.ttf);
+}
+
+.content h1 {
+    font-size: 45px;    
+}
+
+h2 {
+    font-family:  hind-madurai; 
+}
+
+p {
+    font-family: baskerville;
+    font-size: 18px;
+    line-height: 1.6;
 }
