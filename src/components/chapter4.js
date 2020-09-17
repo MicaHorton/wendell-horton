@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 
 export default class Chapter4 extends Component {
+
+    state = {mathjax: null};
+
+    async componentDidMount() {    
+ 
+     
+    }
+    
     render () {
         return (
             <div className='content'>
