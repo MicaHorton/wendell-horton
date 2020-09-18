@@ -45,3 +45,6 @@ promise
 
 .finally
     like .then, but regardless of result or error
+
+    Think this MathJax Problem Fix!
+    https://docs.mathjax.org/en/latest/advanced/typeset.html
