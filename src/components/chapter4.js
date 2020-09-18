@@ -1,13 +1,20 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 
 export default class Chapter4 extends Component {
 
-    state = {mathjax: null};
+   componentDidMount() {
+        var config = document.createElement('script');
+        config.src = 'mathjax-config.js';
+        config.setAttribute('defer', 'defer');
+        document.getElementsByTagName('head')[0].appendChild(config);
 
-    async componentDidMount() {    
- 
-     
-    }
+        var mathjax = document.createElement('script');
+        mathjax.type = 'text/javascript';
+        config.setAttribute('defer', 'defer');
+        mathjax.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
+        mathjax.onload = () => this.forceUpdate();
+        document.getElementsByTagName('head')[0].appendChild(mathjax);
+   }
     
     render () {
         return (
