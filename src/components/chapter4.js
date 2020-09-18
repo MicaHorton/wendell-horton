@@ -5,13 +5,15 @@ export default class Chapter4 extends Component {
    componentDidMount() {
        /* Mount MathJax */
         var config = document.createElement('script');
-        config.src = 'mathjax-config.js';
         config.setAttribute('defer', 'defer');
+        config.type = 'text/javascript';
+        config.src = 'mathjax-config.js';
         document.getElementsByTagName('head')[0].appendChild(config);
 
+
         var mathjax = document.createElement('script');
+        mathjax.setAttribute('defer', 'defer');
         mathjax.type = 'text/javascript';
-        config.setAttribute('defer', 'defer');
         mathjax.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
         document.getElementsByTagName('head')[0].appendChild(mathjax);
 
@@ -20,9 +22,10 @@ export default class Chapter4 extends Component {
   
     
     render () {
+
+
         return (
-            <div className='content'>
-                
+            <div className='content'>                
                 <h1>Alternative Confinement Vessels for Fusion Power</h1>
                 <h2>Stellarator Machines Eliminate the Mega–Amperes of Plasma Currents by Using Nonsymmetric Magnetic Field Configurations</h2>
                     <p>Max-Planck Institute for Plasma Physics first in Garching and now in Greifswald, Germany.</p>
