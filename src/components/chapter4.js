@@ -1,29 +1,12 @@
-import React, { Component, useEffect } from 'react';
+import React, { Component } from 'react';
+import loadMathJax from './load-mathjax.js';
 
 export default class Chapter4 extends Component {
     
    componentDidMount() {
-       /* Mount MathJax */
-        var config = document.createElement('script');
-        config.setAttribute('defer', 'defer');
-        config.type = 'text/javascript';
-        config.src = 'mathjax-config.js';
-        document.getElementsByTagName('head')[0].appendChild(config);
-
-
-        var mathjax = document.createElement('script');
-        mathjax.setAttribute('defer', 'defer');
-        mathjax.type = 'text/javascript';
-        mathjax.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
-        document.getElementsByTagName('head')[0].appendChild(mathjax);
-
+       loadMathJax();
    }
-
-  
-    
     render () {
-
-
         return (
             <div className='content'>                
                 <h1>Alternative Confinement Vessels for Fusion Power</h1>
