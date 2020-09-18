@@ -38,6 +38,7 @@ export default class Navbar extends Component {
             <nav className={` nav ${this.state.overlay && 'overlay-active'} `}>
                 <Link className='nav-item' to='/' onClick={() => this.toggleNav()}>Introduction</Link>
                 <Link className='nav-item' to='/chapter4' onClick={() => this.toggleNav()}>Chapter 4</Link>
+                <Link className='nav-item' to='/chapter5' onClick={() => this.toggleNav()}>Chapter 5</Link>
             </nav>
 
             
