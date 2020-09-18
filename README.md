@@ -1,50 +1,11 @@
-# How To Use Latex Documents
-- Use Pandoc to convert text macros. It will convert some math macros to MathML.
-- Use MathJax to style the rest of the math macros (that are still LaTex.) Also, improves browser support for MathML. 
-- Prettify the HTML using an online converter. Change class to className.
-- Style the HTML and inline-math with CSS.
+# Wendell Horton's Website
+This is a website for my grandfather, who wanted to publish one of his books online. This website includes a little about him, and his books (written in LaTex converted into a website.) I'm still in the progress of converting and publishing the chapters, but you can kheck out the current version at fusionpedia.org!
 
-# Processing a New File
-1) convert with pandoc -f latex -t html -o ch#.html Ch#-nonumbers.tex
-2) cleanup
-    - create indents
-    - get rid of log id's
-    - change class to ClassName
+## Technologies Used
+- HTML & CCS
+- React Framework
+- Pandoc (to convert LaTex to HTML)
+- MathJax
+- AWS Amplify
 
-
-# Some React Notes
-- ES6 Script is the base for JavaScript and knockoffs like ActionScript or whatever. JavaScript is ovbiously the most popular one, so much so, people often use the terms interchangably. 
-- React uses JSX, an extension of JavaScript, not real HTML.
-
-Render - ComponentWillMount
-Compare
-Commit - ComponentDidMount
-
-State can be changed, props cannot be.s
-Props and state are related. 
-The state of one component will often become the props of a child component.
-
-Migrating from Legacy Lifecycles
-https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#fetching-external-data
-
-Promises
-.then
-async/await
-
-https://javascript.info/promise-basics
-
-promise
-    state - pending, fufilled, rejected
-    result - undefined, value, error
-
-.then 
-    two built-in fuctions: result and error
-
-.catch
-    like .then but only for errors
-
-.finally
-    like .then, but regardless of result or error
-
-    Think this MathJax Problem Fix!
-    https://docs.mathjax.org/en/latest/advanced/typeset.html
+For notes on how this website was made, see [NOTES.md](./NOTES.md)
