@@ -50,3 +50,14 @@ promise
 
 .finally
     like .then, but regardless of result or error
+
+Thigns that took a while to get a hang of
+- Flex box
+- Issues with react
+    - Werid CSS (can't access full page)
+    - Just loading external things in gneral
+        - Mathjax Loading
+        - FontAwesome
+        - No jQuery
+- git (still in progress really)
+

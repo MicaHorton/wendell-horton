@@ -1,16 +1,9 @@
 import React, { Component, useEffect } from 'react';
 
 export default class Chapter4 extends Component {
-
     
-
    componentDidMount() {
-       /*
-        var reloadMath = document.createElement('script');
-        reloadMath.src = 'mathjax-retype.js';
-        document.getElementsByTagName('head')[0].appendChild(reloadMath);
-
-       
+       /* Mount MathJax */
         var config = document.createElement('script');
         config.src = 'mathjax-config.js';
         config.setAttribute('defer', 'defer');
@@ -20,9 +13,7 @@ export default class Chapter4 extends Component {
         mathjax.type = 'text/javascript';
         config.setAttribute('defer', 'defer');
         mathjax.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
-        mathjax.onload = () => this.forceUpdate();
-        document.getElementsByTagName('head')[0].appendChild(mathjax);*/
-
+        document.getElementsByTagName('head')[0].appendChild(mathjax);
 
    }
 
@@ -77,3 +68,12 @@ export default class Chapter4 extends Component {
         )
     }
 }
+
+/* 
+1) put in component and do retypset. but the content should exist before the script does. 
+except it doesn't. wait it does. you're commiting the content, then adding the script.
+
+2) put in index.js
+3) use import
+
+*/
