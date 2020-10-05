@@ -10,6 +10,7 @@
     - create indents
     - get rid of log id's
     - change class to ClassName
+    - add quotes to items inside of {} to get rid of unexpected token errors
 
 
 # Some React Notes

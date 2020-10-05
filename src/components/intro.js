@@ -4,7 +4,7 @@ export default class Intro extends Component {
     render () {
         return (
             <div className='content'>
-                <h1>Introduction</h1>
+                <h1>About</h1>
                 <p>
                     Impedit suscipit et pariatur veniam. Qui et nulla repudiandae ullam consequatur ea. 
                     Officiis dolore sed non sit amet aut. Explicabo sed harum non aspernatur quia et deleniti. 
