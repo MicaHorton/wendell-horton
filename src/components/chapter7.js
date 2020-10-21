@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import loadMathJax from './load-mathjax.js';
 
-export default class Chapter4 extends Component {
+export default class Chapter7 extends Component {
     
    componentDidMount() {
        loadMathJax();
@@ -55,11 +55,3 @@ export default class Chapter4 extends Component {
     }
 }
 
-/* 
-1) put in component and do retypset. but the content should exist before the script does. 
-except it doesn't. wait it does. you're commiting the content, then adding the script.
-
-2) put in index.js
-3) use import
-
-*/

@@ -7,10 +7,27 @@
 # Processing a New File
 1) convert with pandoc -f latex -t html -o ch#.html Ch#-nonumbers.tex
 2) cleanup
+    a)
     - create indents
     - get rid of log id's
+    b)
     - change class to ClassName
     - add quotes to items inside of {} to get rid of unexpected token errors
+
+# Finished Chapters
+- [ ] 1
+- [ ] 2
+- [ ] 3
+- [x] 4
+- [x] 5
+- [x] 6
+- [x] 7
+- [ ] 8
+- [ ] 9
+- [ ] 10
+- [ ] 11
+
+
 
 
 # Some React Notes
@@ -61,17 +78,4 @@ Thigns that took a while to get a hang of
         - FontAwesome
         - No jQuery
 - git (still in progress really)
-
-# Finished Chapters
-- [ ] 1
-- [ ] 2
-- [ ] 3
-- [x] 4
-- [x] 5
-- [x] 6
-- [x] 7
-- [ ] 8
-- [ ] 9
-- [ ] 10
-- [ ] 11
 
