@@ -1,0 +1,87 @@
+\documentclass[a4paper,openany,12pt]{book}
+\bibliographystyle{plainnat}
+\usepackage{mathtools}
+\usepackage{url}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{undertilde}
+\usepackage[compact]{titlesec}
+\usepackage{setspace}
+\usepackage{morefloats}
+\usepackage{float}
+\def\margins{\textwidth 6.9in
+             \evensidemargin 0.0in
+             \oddsidemargin 0.0in
+             \marginparwidth -5in
+             \textheight 8.5in
+             \topmargin -.5in
+             \topskip 0.0in}
+\margins
+\def\dsp{{\displaystyle}}
+\raggedbottom
+\titlespacing*{\section}{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
+\titlespacing{\subsubsection}{2pt}{*2}{*2}
+\linespread{1}
+\setlength{\parindent}{25pt}
+\def\Re{\mathop{\rm Re}\nolimits}
+\def\Im{\mathop{\rm Im}\nolimits}
+\def\chix{\raise.5ex\hbox{$\chi$}}
+\def\etal{{\it et~al.}}
+\def\calo{\cal O}
+\def\call{{\cal L}}
+\def\nms{\mathsurround=0pt}
+\def\gtsim{\mathrel{\mathpalette\oversim>}} % greater than or sim.
+\def\ltsim{\mathrel{\mathpalette\oversim<}} % less than or sim.
+\def\oversim#1#2{\lower 2pt\vbox{\baselineskip 0pt \lineskip 1pt
+    \ialign{$\nms#1\hfil##\hfil$\crcr#2\crcr\sim\crcr}}}
+\def\gtequal{\mathrel{\mathpalette\overequal>}} % greater than or equal.
+\def\ltequal{\mathrel{\mathpalette\overequal<}} % less than or equal.
+\def\overequal#1#2{\lower 2pt\vbox{\baselineskip 0pt \lineskip 1pt
+    \ialign{$\nms#1\hfil##\hfil$\crcr#2\crcr=\crcr}}}
+\def\m@th{\mathsurround=0pt}
+\def\n@space{\nulldelimiterspace=0pt \m@th}%1
+\def\biggg#1{{\mbox{$\left#1\vbox to 20.5pt{}\right.\n@space$}}}%2
+\def\Biggg#1{{\mbox{$\left#1\vbox to 23.5pt{}\right.\n@space$}}}%3
+\def\Bigggg#1{{\mbox{$\left#1\vbox to 40pt{}\right.\n@space$}}}%4
+\setcounter{chapter}{7}
+\begin{document}
+%Chap. 8
+\chapter[Space Plasma Physics]{Space Plasma Physics and the Global Navigation Satellite System}
+
+%Sec. 8.1
+\section{Ionospheric Plasma Turbulence and Satellite Systems}
+
+The scintillation and tomography receiver in space (CITRIS) instrument will orbit the Earth near $560\,$km altitude to detect signals from the ground--based array of more than 50 DORIS UHF/S--band radio beacons established at sites around the world by the French Centre National d'Etudes Spatiales (CNES) and the Institut 
+G\'eographique National (IGN). The CITRIS receiver is on the US Air Force Space Test Program Satellite (STPSAT1) launched in 2006. CITRIS records the ionospheric Total Electron Content (TEC) and radio scintillations with a unique ground--to--space geometry. The new instrument was developed to study the ionosphere using data obtained with the UHF and S--band radio transmissions from the DORIS beacons because ionospheric radio scintillations can seriously degrade the performance of many space--geodetic systems, including the DORIS precise satellite orbitography system and Global Navigation Satellite Systems (GNSS). The ionospheric data is based on radio signals sampled at a rate of $200\,$Hz by the Center for Information Technology Research in the Interest of Society (CITRIS) receiver. Numerical models have been used to predict that the  Doppel-Ring-Speicher (DORIS) signals measured by CITRIS may have $30\,$dB fluctuations in amplitude and $30\,$rad in phase as the satellite flies over kilometer--scale ionospheric structures. The data from the space--based CITRIS receiver helps to update and validate theories on the generation and effect of ionospheric irregularities known to influence radio systems. By using simultaneous beacon transmissions from DORIS on the ground and from low--Earth orbit beacons in space, the concept of reciprocity in a nonbilateral propagation medium like the ionosphere is tested. Computer simulations are used to predict the magnitude of amplitude and phase scintillations that are expected to be recorded with the CITRIS instrument. Geostationary beacon transmissions to ground permit the recording of temporal variations in the ionosphere at a fixed--ground longitude. The Global Navigation Satellite Systems (GNSS), consisting of the current Global Positioning System (GPS), Global Navigation Satellite System (GLONASS), and future Galileo satellites, are placed in MEO near $20,000\,$km altitude with about a 12--h period. Ionospheric measurements made with these satellites have both spatial and temporal variations. With the presence of over $30\,$GNSS satellites, ionospheric data provides an abundance of networks with ground--based receivers, e.g., [\emph{Saito, et al.} (1998), \emph{Mannucci, et al.} (1998), \emph{Garcia--Fernandez} (2005)]. 
+
+The ionosphere plasma is a source of error and data loss for many communications, navigation, and radar systems. As satellite radio signals propagate from space through the ionosphere to the ground, they can become distorted by a large number of effects [\emph{Davies} (1990)] including phase fluctuations, Faraday rotation, amplitude fluctuations, group delay, absorption, scattering, frequency shifts, and multipath (Fig.~\ref{F8.1}). Ionospheric characterization is needed to identify these influences, to predict their occurrence and to mitigate their effects on accurate positioning.
+%
+%Fig. 8.1
+\begin{figure}[htb]
+\centerline{\epsfig{file=Bernhardt1,width=5in}}
+\caption{Diagram of the GNSS rays with rotation, scattering and refraction during propagation through the ionosphere layers with traveling ionosphere from the spacecraft to the ground--based receiver. Shows the distortions traveling through the F, E and D ionosphere with irregulars and the absorption layer [\emph{Bernhardt, et al.} (2006)] [Adapted from \emph{Davies} (1990)].}
+\label{F8.1}
+\end{figure}
+
+\begin{thebibliography}{100}
+
+\bibitem{}
+Bernhardt, P. A., Siefring, C. L., Galysh, I. J., Rodilosso, T. F., Koch, D. E., MacDonald, T. L., Wilkens, M. R. and Landis, G. Paul (2006). Ionospheric applications of the scintillation and tomography receiver in space (CITRIS) mission when used with the DORIS radio beacon network, \emph{J. Geodesy.} \textbf{80}, pp.~473--485, \url{https://doi.org/10.1007/s00190-006-0064-6}.
+
+\bibitem{}
+Davies, K. (1990). \emph{Ionospheric Radio}, Electromagnetic Waves Series \textbf{31} (Publisher: Peter Peregrinus Ltd., London, United Kingdom), ISBN:0--86341--186--X.
+
+\bibitem{}
+Garcia--Fernandez, M., Hernandez--Pajares, M., Juan, J. M., Sanz, J. (2005). Performance of the improved Abel transform to estimate electron density profiles from GPS occultation data, \emph{GPS Solut.} \textbf{9}, pp.~105--110, \url{https://doi.org/10.1007/s10291-005-0139-5}.
+
+\bibitem{}
+Mannucci, A. J., Wilson, B. D., Yuan, D. N., Ho, C. H. Lindqwister, U. J. and Runge, T. F. (1998). A global mapping technique for GPS--derived ionospheric total electron content measurements, \emph{Radio Science} \textbf{33}, 
+pp.~565--582, \url{https://doi.org/10.1029/97RS02707}.
+
+\bibitem{}
+Saito, Y., Uemura, S. and Hamaguchi, K. (1998). Cathode ray tube lighting elements with carbon nanotube field emitters, \emph{Jpn. J. Appl. Phys.} \textbf{37}, Part 2, p.~L346, \url{https://doi.org/ 10.1143/JJAP.37.L346}.
+
+\end{thebibliography}
+\end{document}

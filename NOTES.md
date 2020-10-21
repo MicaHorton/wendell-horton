@@ -62,4 +62,16 @@ Thigns that took a while to get a hang of
         - No jQuery
 - git (still in progress really)
 
-test
+# Finished Chapters
+- [ ] 1
+- [ ] 2
+- [ ] 3
+- [x] 4
+- [x] 5
+- [x] 6
+- [x] 7
+- [ ] 8
+- [ ] 9
+- [ ] 10
+- [ ] 11
+

@@ -1,0 +1,424 @@
+\documentclass[a4paper,openany,12pt]{book}
+\bibliographystyle{plainnat}
+\renewcommand{\chaptername}{}
+\renewcommand{\thechapter}{}
+\usepackage{mathtools}
+\usepackage{url}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{undertilde}
+\usepackage[compact]{titlesec}
+\usepackage{setspace}
+\usepackage{morefloats}
+\usepackage{float}
+\def\margins{\textwidth 6.9in
+             \evensidemargin 0.0in
+             \oddsidemargin 0.0in
+             \marginparwidth -5in
+             \textheight 8.5in
+             \topmargin -.5in
+             \topskip 0.0in}
+\margins
+\def\dsp{{\displaystyle}}
+\raggedbottom
+\titlespacing*{\section}{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
+\titlespacing{\subsubsection}{2pt}{*2}{*2}
+\linespread{1}
+\setlength{\parindent}{25pt}
+\def\Re{\mathop{\rm Re}\nolimits}
+\def\Im{\mathop{\rm Im}\nolimits}
+\def\chix{\raise.5ex\hbox{$\chi$}}
+\def\etal{{\it et~al.}}
+\def\calo{\cal O}
+\def\call{{\cal L}}
+\def\nms{\mathsurround=0pt}
+\def\gtsim{\mathrel{\mathpalette\oversim>}} % greater than or sim.
+\def\ltsim{\mathrel{\mathpalette\oversim<}} % less than or sim.
+\def\oversim#1#2{\lower 2pt\vbox{\baselineskip 0pt \lineskip 1pt
+    \ialign{$\nms#1\hfil##\hfil$\crcr#2\crcr\sim\crcr}}}
+\def\gtequal{\mathrel{\mathpalette\overequal>}} % greater than or equal.
+\def\ltequal{\mathrel{\mathpalette\overequal<}} % less than or equal.
+\def\overequal#1#2{\lower 2pt\vbox{\baselineskip 0pt \lineskip 1pt
+    \ialign{$\nms#1\hfil##\hfil$\crcr#2\crcr=\crcr}}}
+\def\m@th{\mathsurround=0pt}
+\def\n@space{\nulldelimiterspace=0pt \m@th}%1
+\def\biggg#1{{\mbox{$\left#1\vbox to 20.5pt{}\right.\n@space$}}}%2
+\def\Biggg#1{{\mbox{$\left#1\vbox to 23.5pt{}\right.\n@space$}}}%3
+\def\Bigggg#1{{\mbox{$\left#1\vbox to 40pt{}\right.\n@space$}}}%4
+\setcounter{chapter}{9}
+\begin{document}
+%Chapter 10
+
+\chapter{Auroral Plasma Structures}
+
+%10.1
+\section{Impure Modes in Auroral Plasma Called Auroral Beads}
+
+Auroral beads indicate that shear--flow interchange instability in nightside magnetotail triggers substorm onset 
+\emph{Derr, et al.} (2019). A geometric wedge model of the near--earth nightside plasma sheet is used to derive a wave equation for long--wavelength buoyancy waves which transmit $\bm{E\times B}$ sheared zonal flows along magnetic flux tubes. Discrepancies with the wave equation result in \emph{Kalmoni, et al.} (2015) for shear--flow ballooning instability are discussed. The shear--flow interchange instability is responsible for substorm onset. The wedge wave equation is used to compute dispersion relations and growth rates in the midnight region of the nightside magnetotail around 9-$12\,R_E$ where the instability develops for comparison with the growth rates of auroral beads characteristic of geomagnetic substorm onset. Stability analysis is performed for the shear--flow interchange modes, and a brief discussion of nonlinearity follows.
+
+When the interplanetary magnetic field originating at the sun contains a southward magnetic field component, the solar wind can cause magnetic reconnection on the dayside of the earth, followed by nightside reconnection in the magnetotail ``Interplanetary magnetic field and the auroral zones", n.d). This deposits energy in the magnetotail and disrupts the equatorial current sheet, initiating a sequence events which leads to the formation of aurorae in the E--layer of the ionosphere by accelerating plasma towards the polar regions of the earth [\emph{Coppi, et al.} (1966), \emph{Kivelson and Russell} (1995), \emph{Wolf} (1995), \emph{Angelopoulos, et al.} (2008a,b), \emph{De Zeeuw, et al.} (2004), \emph{Zou, et al.} (2010), \emph{McPherron, et al.} (2011), \emph{Sergeev, et al.} (2011), \emph{Forsyth, et al.} (2014)]. Such a sequence of events is referred to as a magnetic substorm. At the onset of magnetic substorms, the most equator--ward auroral arc suddenly brightens, followed by breakup of the arc and pole--ward expansion [\emph{Akasofu} (1964) \emph{Donovan, et al.} (2008)]. In the minutes leading to the breakup, small periodic fluctuations in the aurora aligned with magnetic longitude form [\emph{Nishimura, et al.} (2014)]. These fluctuations have come to be called (auroral beads Henceforth, ``longitudinal" will be used to refer to magnetic longitude. Auroral beads have been found to be pervasive in the onset arcs, and the exponential growth of the beads indicates that a plasma instability in the magnetosphere is responsible for the substorm onsets [\emph{Gallardo--Lacourt, et al.} (2014), \emph{Kalmoni, et al.} (2017)].
+
+All--Sky Imagers (ASIs), which are a part of the NASA THEMIS mission to uncover the sequence of events which occur in the first few minutes of substorm onset, are distributed across North America, as seen in Fig.~\quad. They have a $1\,$km spatial resolution, and $3\,$s cadence image capturing capacity, and respond to $557.7\,$nm emissions. This spatio--temporal resolution is succinct to capture the pertinent data for analyzing auroral bead structures for the green emissions corresponding to aurora at an altitude of approximately $110\,$km name the ionosphere E--layer [\emph{Mende, et al.} (2008), \emph{Burch and Angelopoulos} (2008)].
+
+\emph{Motoba, et al.} (2012) used ASI data from auroral beads in the northern and southern hemispheres, and proposed a common magnetospheric driver. Ultra--low frequency waves occurring within minutes of substorm onset are observed in the magnetosphere at frequencies similar to those of the auroral beads, and a single event was analyzed by \emph{Rae, et al.} (2010) to demonstrate that the beading is characteristic of a near--earth magnetospheric instability triggering a current disruption in the central plasma sheet. Of the examined instabilities, the cross--field current instability and the shear--flow ballooning instability were the only two consistent with the analytical results. \emph{Kalmoni, et al.} (2015) used the ASI data for substorm events over a 12--hour time span throughout the auroral oval (pre--midnight sector) across Canada and Alaska to perform an optical--statistical analysis that yielded maximum growth rates for the beads as a function of longitudinal wavenumber, which were compared with theoretical calculations for growth rate dependence on wavenumber for various instabilities. Ultimately, the two mechanisms which remained unrefuted were the shear--flow ballooning instability and the cross--field current instability.
+
+The statistical analysis involved first spatially Fourier transforming longitudinal keograms to obtain the power spectral density. The longitudinal wavenumbers 
+$k_{y,E}$ measured in the ionosphere lay within the interval 
+$k_{y,E}\epsilon[0.5\times 10^{-4}{\rm m}^{-1}$,\ $1.5\times 10^{-4}\rm m^{-1}]$ during initial beading. The logarithm of the power spectral density was then plotted against time to determine the intervals of exponential growth for each wavenumber during onset. This is shown for one wavenumber in Fig.~\quad. Since the exponential growth of each mode had a unique well--defined growth rate during the interval until the breakup, only one instability is operating to produce the growth for each event. The growth rates were then examined as a function of wavenumber for determination of the most unstable waves. The maximum growth rates were in the range $[0.03s^{-1},\ 0.3s^{-1}]$ with the median growth rate $\gamma\sim 0.05\,\rm s^{-1}$.
+%
+Note that wave propagation direction (eastward vs.~westward) differed for the individual substorm events, but growth rates are independent of propagation direction [\emph{Nishimura, et al.} (2016).
+
+Subsequently, \emph{Kalmoni, et al.} (2015) used the T96 model [\emph{Tsyganenko} (1995, 1996)] to map the wavenumbers back to the equatorial magnetosphere to obtain the corresponding magnetospheric wavenumbers $k_y\epsilon[2.5\times 10^{-6}\,{\rm m}^{-1}$, $3.75\times 10^{-6}{\rm m}^{-1}]$, or wavelength interval $\lambda_\perp\epsilon[1700\,$km, $2500\,$km]. The T96 model underestimates field--line stretching (and spatial scales) during the substorm growth phase, but the error is systematic, so the spatial scales can be compared between events. The arcs map to the equatorial plane mostly in the range of 9-$12\,R_E$, with field strengths less than $20\,$nT. The growth rates were normalized so that the spatial scales in the magnetosphere were not an artifact of the T96 mapping. 
+%
+Of the two instabilities which were not ruled out by the \emph{Kalmoni, et al.} (2015) analysis, the shear flow ballooning instability provided the best explanation of the observed beading results, corroborating previous findings along these lines [\emph{Friedrich, et al.} (2001)]. This instability was first characterized in \emph{Voronkov, et al.} (1997). This instability is a hybrid of the Kelvin--Helmholtz and Rayleigh--Taylor instabilities with larger growth rates operating on shorter growth time scales than a pure Kelvin--Helmholtz instability. The former are driven by shear flows and the latter by earthward pressure gradients. An extensive linear analysis of such hybrid instabilities and their relation to substorms was conducted by \emph{Yamamoto} (2008, 2009). In particular, it was found that the hybrid waves can grow in the presence of an earthward particle energy density gradient. The auroral arc is tied to the boundary between the stretched field 91 lines and the depolarized field lines at the inner edge of the near--Earth plasma sheet. This is 92 where pressure gradients are most relevant. The spatial scale of the shear flow ballooning instability varies inversely as the size of the shear--flow region. \emph{Kalmoni, et al.} (2015) determined that for this instability, the growth rate peaks at $0.2\,s^{-1}$ in the wavenumber regions specified above.
+
+After setting up a simple geometric wedge model following \emph{Wolf, et al.} (2018) for which perturbations will entail earthward flowing waves which carry the effects of the magnetospheric disturbance back to the ionosphere, a wave equation for the plasma wedge is derived which differs from that of both his original paper [\emph{Wolf, et al.} (2018)], and that from which \emph{Kalmoni, et al.} (2015) extracted the equation governing the shear flow ballooning instability, namely \emph{Voronkov, et al.} (1997). \emph{Voronkov, et al.} (1997) treated the coupling of shear flow and pressure gradient instabilities, but incorrectly perturbed the momentum equation. \emph{Wolf, et al.} (2018), on the other hand, neglected the shear flow effect, thus obtaining low--frequency buoyancy waves which are not coupled to shear flow. Either of these alterations shifts the growth rates and, more importantly, fails to capture some of the essential qualitative features of the instability mechanism.
+
+The linearization of the MHD field equations from which all equations under consideration are derived by the addition of various constraints and assumptions. 
+\emph{Voronkov, et al.} (1997) first discusses the way in which the shear flow ballooning wave equation by a particular misuse of the momentum equation is obtained. The linearized field equations, less the continuity equation, is an unnecessary constraint if one utilizes the flux tube volume given in terms of the magnetic field strength. Upon combining these equations to obtain an ordinary radial differential equation for the radial component of the velocity, there are several limits in which to obtain a reduced low--frequency shear flow--interchange wave equation.  \emph{Wolf, et al.} (2018) derive for the equation the buoyancy waves in the absence of velocity shear.
+
+The primary result is the shear--flow interchange wave equation which delivers the instability which is observed in the magnetotail. The interchange wave equation absent shear flow lacks the generality of the full shear flow interchange wave equation. Shear flow--interchange instability should replace shear flow ballooning instability proposals to explain magnetospheric phenomena in the appropriate limits. What was a destabilizing ballooning term is really seen to be replaced by a stabilizing interchange term. The shear flow couples to the interchange instability in a way which reduces the growth rates relative to shear flow ballooning instability, and a fortiori to pure Kelvin--Helmholtz instability. Growth rates and dispersion relations in the regions under consideration are obtained and discussed, and stability analysis is descrubed.
+
+In summary, a shear--flow interchange instability in the midnight region of the nightside magnetopause is the link the causal chain of events which initiate substorm onsets via earthward traveling buoyancy waves, and results in the aurorae in the E--layer of the ionosphere. After perturbations drive an instability, the linear equations and dispersion relations become invalid, and the full nonlinear dynamical analysis becomes necessary. 
+
+%10.2
+\section{Wedge Model for Local Nightside Geomagnetic Tail Plasma}
+
+First, one constructs a cylindrical coordinate system in the near--earth nightside plasma sheet, shown to the right in Fig.~XX. The center of the magnetosphere is taken to be the origin of cylindrical coordinates $(r, \phi, y)$. The $y$--axis is that of standard SM or GSM coordinates, perpendicular to the magnetic dipole and the earth--sun line. Distance from the $y$--axis is given by the $r$--coordinate, which specifies the distance of the tubes of magnetic flux from the center of the magnetosphere, and hence the local magnetic curvature. The transformation to the coordinates of \emph{Voronkov, et al.} (1997) is simple in the local plasma sheet region, but globally aligns more naturally with the magnetospheric structures of interest.
+
+Following \emph{Wolf, et al.} (2018), the simplest geometry has been chosen which still allows magnetic tension to support magnetic buoyancy oscillations to drive earthward flow, so that analytical solution for the eigenvalues is possible. More general equations include coupling to shear flow velocity profiles. The two places at the upper and lower boundary (at $\pm\Delta\phi/2)$ of the wedge represent the northern and southern ionospheres, taken by approximation to have no conductance or resistive damping owing to the absence of a field--aligned current.
+
+The system is taken to be at rest in equilibrium. We consider small perturbations which do not induce motion in the $\phi$--direction, so that $k_\phi=k_\|=0$. Note that this implies that the field lines remain concentric circles. Background equilibrium quantities are labeled with ``0'' subscripts, and ``$\delta$'' signifies perturbations. Magnetic field lines are approximated by concentric circles, and density, pressure, and magnetic field strength vary radially. The pressure dynamics are modeled as adiabatic, with the entropy $K\equiv PV^\Gamma$ constant, with adiabatic gas constant $\Gamma=(f+2)/f$, where $f$ is the number of degrees of freedom, and $V(r)=r\Delta\phi/B(r)$ is the flux tube volume. Equilibrium force balance is given by:
+\begin{equation}
+-\nabla\left(P_0+\frac{B_0^2}{2\mu_0}\right)+\frac{B_0^2}{\mu_0r}=0.\label{E9.67}
+\end{equation}
+The flux tube has a curvature towards the center of the earth in the equatorial region, and the flux tube radius $r$ is also the local radius of magnetic curvature of the dipole magnetic field.
+
+Background plasma parameters take the following form in this model:
+\begin{eqnarray}
+\vec B_0&=&B_0(r)\widehat\phi\label{E9.68}\\
+\vec v_0&=&v_0(r)\widehat y\label{E9.69}\\
+\rho_0&=&\rho_0(r)\label{E9.70}\\
+P_0&=&P_0(r).\label{E9.71}
+\end{eqnarray}
+So we assume that all equilibrium quantities are static and depend only on radius in the equitorial plane. The velocity has the form of an axially--directed $\bm{E\times B}$ shear flow. More details about this model, such as the specific radial profiles of the background parameters and some of the perturbations which result under the assumption of no shear velocity (only buoyancy waves) are described in \emph{Wolf, et al.} (2018). 
+
+%10.3
+\section{Linear Dynamics of Geomagnetic Tail Plasma}
+
+We begin with the MHD field equations:
+\begin{eqnarray}
+\frac{\partial}{\partial t}\left(\frac{P}{\rho^\Gamma}\right)+\vec v\cdot\nabla\left(\frac{P}{\rho^\Gamma}\right) &=& 0\label{E9.72}\\
+\frac{\partial\vec B}{\partial t}-\nabla\times(\vec v\times\vec B)&=&0\label{E9.73}\\
+\rho{\partial\vec v\over\partial t}+\rho\vec v\cdot\nabla\vec v&=&-\nabla\left(P+{B^2\over 2\mu_0}\right)+{\vec B\cdot\nabla\vec B\over\mu_0}\label{E9.74}\\
+{\partial\rho\over\partial t}+\nabla\cdot(\rho\vec v)&=&0.
+\end{eqnarray}
+
+A flowchart of the inferential pathways and corresponding assumptions for all equations to be analyzed is included below for reference and facilitates a global view of the interrelations.
+
+%10.4
+\section{Voronkov Treatment of Momentum Equation}
+
+Before proceeding with the derivation of the appropriate wave equation, we briefly discuss the \emph{Voronkov, et al.} (1997) results. In Voronkov's treatment of the momentum equation the equilibrium force balance can be written as
+\begin{equation}
+-\nabla\left(P_0+{B^2\over 2\mu_0}\right)+{B^2\over\mu_0r}={\rho_0v_\phi^2\over r}.\label{E9.76}
+\end{equation}
+Voronkov recasts this in the following way:
+\begin{equation}
+\rho_0g=\nabla\left(P_0+\frac{B^2}{2\mu_0}\right),\label{E9.77}
+\end{equation}
+where $\rho_0 g$ is defined as
+\begin{equation}
+\rho_0 g\coloneqq\frac{B^2}{\mu_0r}-\frac{\rho_0v_\phi^2}{r}.\label{E9.78}
+\end{equation}
+Notice that $g$ contains both a force term and an acceleration term.
+
+Subsequently, the momentum equation gets perturbed with a $\rho g$ term acting as a source, rather than 
+$\vec B\cdot\nabla\vec B/\mu_0$. This is not a gravitational term, but a term with the $g$ defined implicitly as above in Eq.~(\ref{E9.78}). There is no obvious reason that $g$ in this form would remain constant during the perturbation. For example, the magnetic field term gets perturbed everywhere except within the $\rho g$ term. For the magnetospheric waves requires global perturbations of the dipole magnetic field vector which is missing in the simpler Voronkov model.
+
+%10.4.1
+\subsection{Linearized MHD equations for wedge flux tube}
+
+Now, let's return to the derivation at hand, within the wedge formalism. Let's survey each equation and discuss. We can from the start bypass the continuity equation which \emph{Voronkov, et al.} (1997) uses as an additional constraint by assuming the form of the density to be that of a flux tube
+\begin{equation}
+\rho=\frac{B}{r\Delta\phi}\label{E9.79}
+\end{equation}
+in the adiabatic pressure dynamics equation. Note that the $\Delta\phi$ is a constant. It is fitting to define the flux tube entropy $K$ as
+\begin{equation}
+K\coloneqq PV^\Gamma=\frac{P}{\rho^\Gamma}\label{E9.80}
+\end{equation}
+for future use in eliminating pressure and more intuitively representing interchange dynamics of the flux tubes under consideration. The adiabatic pressure dynamics using the convective time derivative
+\begin{equation}
+\frac{D}{Dt}\left(\frac{P}{\rho^\Gamma}\right)\label{E9.81}
+\end{equation}
+thus take the following form for a flux tube in the wedge formalism:
+\begin{equation}
+\frac{D}{Dt}\left(P\left({r\over B}\right)^\Gamma\right)=0.\label{E9.82}
+\end{equation}
+Substituting the total fields and linearizing, we obtain the equation which governs the pressure fluctuation dynamics:
+\begin{equation}
+\left({\partial\over\partial t}+v_0{\partial\over\partial y}\right)\left({\delta P\over P_0}-{\delta B\over B_0}\right)+{K'_0\over K_0}\delta v_r=0.\label{E9.83}
+\end{equation}
+Henceforth, partial radial derivatives will be indicated by primes when convenient.\\
+\indent The magnetic field dynamics in the flux tube are governed by Faraday's law with $\vec E=-\vec v\times\vec B$, owing to the high conductivity in the region:
+\begin{equation}
+\frac{\partial\vec B}{\partial t}=-\nabla\times(\vec b\times\vec B).\label{E9.84}
+\end{equation}
+Substituting the total fields and linearizing, we obtain:
+\begin{eqnarray}
+\frac{\partial\delta B_r}{\partial t}&=&-v_0\frac{\partial\delta B_r}{\partial y}\label{E9.85}\\
+\frac{\partial\delta B_\phi}{\partial t}&=&-v_{0}\frac{\partial\delta B_\phi}{\partial y}-B_0\frac{\partial\delta v_y}{\partial y}-B_0\delta v'_r=B'_0\delta v_r\label{E9.86}\\
+\frac{\partial\delta B_y}{\partial t}&=&\frac{v_0}{r}\delta B_r+v'_0\delta B_r+v_0
+\delta B'_r.\label{E9.87}
+\end{eqnarray}
+Now we examine the momentum equation, which governs the plasma dynamics:
+\begin{equation}
+\rho\frac{\partial\vec v_r}{\partial t}+\rho\vec v\cdot\nabla\vec v=-\nabla\left(P+\frac{B^2}{2\mu_0}\right)+\frac{\vec B\cdot\nabla\vec B}{\mu_0}.\label{E9.88}
+\end{equation}
+Substituting the total fields and linearizing, we obtain:
+\begin{eqnarray}
+&&\rho_0{\partial\delta v_r\over\partial t}+\rho_0 v_0{\partial\delta v_r\over\partial y}=-{\partial\over\partial r}\left(\delta P+{B_0\over\mu_0}\delta B_\phi\right)-{2B_0\over\mu_0r}\delta B_\phi\label{E9.89}\\
+%
+&&\rho_0{\partial\delta v_\phi\over\partial t}+\rho_0 v_0{\partial\delta v_\phi\over\partial y}={B_0\over\mu_0r}\delta B_r+{B'_0\over\mu_0}\delta B_r\label{E9.90}\\
+%
+&&\rho_0{\partial\delta v_y\over\partial t}+\rho_0 v_0{\partial\delta v_y\over\partial y}+\rho_0 v'_0\delta v_r= -{\partial\delta B\over\partial y}-\frac{B_0}{\mu_0}\frac{\partial\delta B_\phi}{\partial y},\label{E9.91}
+\end{eqnarray}
+which governs the plasma acceleration.
+
+In the wedge formalism, the continuity equation is unnecessary, as the density is already expressed in terms of the magnetic field. Thus, the density perturbations are implicit in magnetic field fluctuations of flux tubes via flux freezing.
+
+%10.5
+\section{Magnetospheric Wave Equation for Plasma Wedge}
+
+Now, we assume all perturbations take the form of axially--propagating waves 
+$e^{ik_yy-i\omega t}$ in the plasma sheet, denoting the Doppler--shifted frequency:
+\begin{equation}
+\widetilde\omega(r)\coloneqq\omega-k_y v_0(r),\label{E9.92}
+\end{equation}
+as these are the waves which will map back to the ionosphere to cause the longitudinally--directed auroral beads. Note that this converts primes into total rather than partial radial derivatives.
+
+Substituting this form into our self--consistent set of dynamical equations (17)--(25) and (26) (for \emph{Voronkov, et al.} (1997)), we obtain:
+\begin{eqnarray}
+i\widetilde\omega\left({\partial P\over P_0}-\Gamma{\delta B\over B_0}\right)&=&{K'_0\over K_0}\delta v_r\label{E9.93}\\
+-i\widetilde\omega\delta B_r&=&0\label{E9.94}\\
+-i\widetilde\omega\delta B_\phi&=&-ik_y B_0\delta v_y-B'_0\delta v_r-B_0\delta v'_r
+\label{E9.95}\\
+-i\omega\delta B_y&=&{v_0\over r}\delta B_r+v'_0\delta B_r+v_0\delta B'_r\label{E9.96}\\
+-i\widetilde\omega\rho_0\delta v_r&=&-{\partial\over\partial r}\left(\delta P+{B_0\over\mu_0}\delta B_\phi\right)-{2B_0\over\mu_0r}\delta B_\phi\label{E9.97}\\
+-i\widetilde\omega\rho_0\delta v_\phi&=&{B_0\over\mu_0r}\delta B_r+{B'_0\over\mu_0}\delta B_r\label{E9.98}\\
+-i\widetilde\omega\rho_0\delta v_y+\rho_0v'_0\delta v_r&=&-ik_y\delta P-ik_y{B_0\over\mu_0}\delta B_\phi.\label{E9.99}
+\end{eqnarray}
+We can now see that (\ref{E9.94}), (\ref{E9.96}), and (\ref{E9.98}) imply the following perturbation components:
+\begin{eqnarray}
+\delta\vec B&=&\delta B_\phi\widehat\phi\label{E9.100}\\
+\delta\vec v&=&\delta v_r\widehat r+\delta v_y\widehat y.\label{E9.101}
+\end{eqnarray}
+So three of the equations are now implicitly taken into account, and from the remaining 
+Eqs.~(\ref{E9.93})--(\ref{E9.99}) we obtain the following system:
+\begin{eqnarray} 
+i\widetilde\omega\left({\partial P\over P_0}-\Gamma{\delta B\over B_0}\right)&=&{K'_0\over K_0}\delta v_r\label{E9.102}\\
+i\widetilde\omega{\delta B_\phi\over B_0}&=&ik_y\delta v_y+\delta v'_r+{B'_0\over B_0}
+\delta v_r\label{E9.103}\\
+i\widetilde\omega\rho_0\delta v_r&=&{\partial\over\partial r}\left(\delta P+{B_0\over\mu_0}\delta B_\phi\right)+{2B_0\over\mu_0r}\delta B_\phi\label{E9.104}\\
+i\widetilde\omega\rho_0\delta v_y-\rho_0v'_0\delta v_r&=&ik_y\delta P+ik_y{B_0\over\mu_0}\delta B_\phi.\label{E9.105}
+\end{eqnarray}
+From now on, it will be convenient to make frequent use of the Alfv\'en speed, sound speed, and fast mode wave speeds given by $c_A^2\coloneqq B_0^2/\mu_0\rho_0, c_s^2\coloneqq\Gamma P_0/\rho_0$, and $c_f^2\coloneqq c_A^2+c_s^2$, respectively. Now, for convenience, the equilibrium force balance equation can be recast as a condition to eliminate $B_0$ in lieu of $K_0$:
+\begin{equation}
+\frac{B'_0}{B_0}=\frac{1}{c_f^2}\left(-\frac{c_s^2}{\Gamma}\frac{K'_0}{K_0}+\frac{c_s^2-c_A^2}{r}\right)\label{E9.106}
+\end{equation}
+which will make manifest the interchange instability.
+
+Eliminating $\delta v_y, \delta P$, and $\delta B_\phi$, we obtain the differential equation for the radial velocity fluctuations $\delta v_r$, written in a form which most resembles that of \emph{Wolf, et al.} (2018):
+\begin{eqnarray}
+\widetilde\omega\delta v_r&=&\frac{\widetilde\omega}{\rho_0}{d\over dr}\left(-\frac{\delta v_r\rho_0\widetilde\omega(c_s^2-c_A^2)}{r(\widetilde\omega^2-k_y^2c_f^2)}-\frac{d\delta v_r}{dr}\frac{c_f^2\rho_0\widetilde\omega}{\widetilde\omega^2-k_y^2c_f^2}-\frac{\delta v_r\rho_0v'_0 k_y c_f^2}{\widetilde\omega^2-k_y^2c_f^2}\right)\nonumber\\
+&&\mbox{}+\ \frac{2c_A^2}{r}\left(\frac{\delta v_r}{\Gamma c_f^2}[\left[c_s^2\frac{K'_0}{K_0}-\frac{\widetilde\omega^2\Gamma(c_s^2-c_A^2)}{r(\widetilde\omega^2-k_y^2c_f^2)}\right]-\frac{d\delta v_r}{dr}\frac{\widetilde\omega^2}{\widetilde\omega^2-k_y^2c_f^2}-\frac{\delta v_rk_y\widetilde\omega v'_0}{\widetilde\omega^2-k_y^2c_f^2}\right).\label{E9.107}
+\end{eqnarray}
+Indeed, in this form, it is easy to see that dropping velocity shear terms yields precisely the equation in \emph{Wolf, et al.} (2018):
+\begin{eqnarray}
+\omega^2\delta v_r&=&\frac{\omega}{\rho_0}{d\over dr}\left(-{\delta v_r\rho_0\omega(c_s^2-c_A^2)\over r\left(\omega^2-k_y^2c_f^2\right)}-{d\delta v_r\over dr}{c_f^2\rho_\omega\over \omega^2-k_y^2 c_f^2}\right)\nonumber\\
+&&\mbox{}+\ {2c_A^2\over r}\left({\delta v_r\over \Gamma c_f^2}\left[c_s^2{K'_0\over K_0}-{\omega^2\Gamma(c_s^2-c_A^2)\over r(\omega^2-k_y^2c_f^2)}\right]-{d\delta v_r\over dr}{\omega^2\over \omega^2-k_y^2c_f^2}\right).\label{E9.108}
+\end{eqnarray}
+Note that the frequencies are no longer Doppler--shifted (there is no shear velocity to supply the shift!). The objective of \emph{Wolf, et al.} (2018) was to study buoyancy waves in the magnetosphere, and velocity shear terms were thus neglected in order to facilitate a clearer understanding of the interchange--induced buoyancy waves, with buoyancy force arising from magnetic tension rather than gravity. This equation still describes both fast mode longitudinal and buoyancy waves in the plasma wedge, but the former are easily eliminated, which we will demonstrate in what follows.
+
+%10.6
+\section[Reduced Low--Frequency Wedge]{Reduced Low--Frequency Wedge--Wave Equation for Auroral Waves and Beads}
+
+The resulting reduced low--frequency equation gives the long wavelength buoyancy waves in the nightside wedge:
+\begin{equation}
+\delta v''_r+\left(\frac{v''_0}{k_y\widetilde\omega}+\frac{1}{\omega^2}\frac{2}{\Gamma r}\frac{c_A^2c_s^2}{c_f^2}\frac{K'-0}{K_0}-1\right)k_y^2\delta v_r=0\label{E9.109}
+\end{equation}
+with the $\bm{E\times B}$ shear flow velocity $v_0(r)$ and local magnetic curvature determining the dynamic stability conditions. This equation for low--frequency waves in the wedge captures the most general dynamical phenomena relevant to the causal chain of events which we aim to describe.
+
+Though it does not pertain to the more general analysis at hand, it should be mentioned that these limits, taken in the appropriate order, agree with those in \emph{Wolf, et al.} (2018), barring what appear to be minor typographical errors (determined by performing a unit check) on his part. The buoyancy frequency, which was thoroughly discussed in \emph{Wolf, et al.} (2018), is given by the next--to--last term in our equation. Let us perform this check. Dropping the shear velocity term, we obtain:
+\begin{equation}
+\delta v''_r+\left({1\over \omega^2}{2\over \Gamma r}{c_A^2c_s^2\over c_f^2}{K'_0\over K_0}-1\right)k_y^2\delta v_r=0.\label{E9.110}
+\end{equation}
+Thus the first term yields immediately the buoyancy frequency for waves in a wedge
+\begin{equation}
+\omega_b^2(r)={2\over \Gamma r}{c_A^2c_s^2\over c_f^2}{K'_0\over K_0}.\label{E9.111}
+\end{equation}
+The speed $cAc_S/c_f$ is just that of the slow mode buoyancy waves which result from interchange oscillations.
+
+Recast in the above notation, the \emph{Voronkov, et al.} (1997) result (obtained in a methodologically identical way) utilized by \emph{Kalmoni, et al.} (2015) is
+\begin{equation}
+\delta v''_r+\left(\frac{v''_0}{k_y\widetilde\omega}-\frac{g}{\widetilde\omega^2}\frac{\rho'_0}{\rho_0}-\frac{1}{\widetilde\omega^2}\frac{g^2}{c_f^2}-1\right)k_y^2\delta v_r=0.\label{E9.112}
+\end{equation}
+As written by \emph{Voronkov, et al.} (1997), this has the form
+\begin{equation}
+\delta v''_r+\left({v''_0\over k_y\widetilde\omega}+{W\over\widetilde\omega^2}
+-1\right)k_y^2\delta v_r=0,\label{E9.113}
+\end{equation}
+where
+\begin{equation}
+W\coloneqq-\frac{g\rho'_0}{\rho_0}-\frac{g^2}{c_f^2},\label{E9.114}
+\end{equation}
+with effective acceleration defined above. The term $W$, obtained by \emph{Voronkov, et al.} (1997), was taken to be an analog of the buoyancy frequency, 
+$\omega_b^2$.
+
+%10.7
+\section{Examination of Stability Auroral Ballooning Modes}
+
+The second derivative and velocity--shear terms are the same. The density--gradient terms differ, but the main effective difference is in the ballooning/interchange terms. Near the inner edge of the plasma sheet, at approximately 9-$12\,R_E$, the analysis of \emph{Kalmoni, et al.} (2015) indicates that these terms are destabilizing, whereas the above analysis reveals these terms to be stabilizing. This is due to differences between ballooning and interchange, where the former is often treated as localized and the latter is globally distributed along the magnetic field lines.
+
+Shear flow--ballooning dispersion relation
+\begin{equation}
+\omega^2+\left(\frac{k_yv_0}{1-k^2-\delta^2}\frac{\delta^2}{L^2}-2k_yv_0\right)\omega+\left(\frac{k_y^2\delta^2}{1-k_y^2\delta^2}W-\frac{k_y^2\delta^2}{1-k_y^2\delta^2}\frac{v_0^2}{L^2}+k_y^2v_0^2\right)=0.\label{E9.115}
+\end{equation}
+Now, we let $\omega=\omega_r+i\gamma$, and obtain a real equation and an imaginary equation, which can be jointly solved for $\omega(k_y)$ and $\gamma(k_y)$:
+\begin{eqnarray}
+\frac{\omega_r\delta}{v_0}&=&k_y\delta-\frac{1}{2}\frac{k_y\delta}{1-k_y^2\delta^2}
+\frac{\delta^2}{L^2}\label{E9.116}\\
+\frac{\gamma\delta}{v_0}&=&\frac{k_y\delta}{1-k_y^2\delta^2}\sqrt{(1-k_y^2\delta^2)
+\frac{\delta^2}{v_0^2}W-\frac{1}{4}\left(\frac{\delta^2}{L^2}\right)^2}. \label{E9.117}
+\end{eqnarray}
+
+Ballooning dispersion relation:
+\begin{equation}
+\omega^2-2k_yv_0\omega+\left(\frac{k_y^2\delta^2}{1-k_y^2\delta^2}\frac{2(1-\Gamma)}{\Gamma Lr}\frac{c_A^2c_s^2}{c_f^2}+k_y^2v_0^2\right)=0.\label{E9.118}
+\end{equation}
+Now, we let $\omega=\omega_\Gamma+i\gamma$, and obtain a real equation and an imaginary equation, which can be jointly solved for $\omega(k_y)$ and $\gamma(k_y)$:
+\begin{eqnarray}
+\frac{\omega_r\delta}{v_0}&=&k_y\delta\label{E9.119}\\
+\frac{\gamma\delta}{v_0}&=&\frac{k_y\delta}{1-k_y^2\delta^2}\sqrt{(1-k_y^2\delta^2)\frac{2(1-\Gamma)}{\Gamma Lr}\frac{c_A^2c_s^2}{c_f^2v_0^2}\delta^2}.\label{E9.120}
+\end{eqnarray}
+Shear flow--interchange dispersion relation:
+\begin{equation}
+\omega^2+\left({k_yv_0\over 1-k_y^2\delta^2}{\delta^2\over L^2}-2k_y v_0\right)\omega+\left({k_y^2\delta^2\over 1-k_y^2\delta^2}{2(1-\Gamma)\over \Gamma Lr}{c_A^2c_s^2\over c_f^2}-{k_y^2\delta^2\over 1-k_y^2\delta^2}{v_0^2\over L^2}+k_7^2 v_0^2\right)=0.
+\label{E9.121}
+\end{equation} 
+Now, we let $\omega=\omega_r+i\gamma$, and obtain a real equation and an imaginary equation, which can be jointly solved for $\omega(k_y)$ and $\gamma(k_y)$:
+\begin{eqnarray}
+\frac{\omega_r\delta}{v_0}&=&k_y\delta-\frac{1}{2}\frac{k_y\delta}{1-k_y^2\delta^2}
+\frac{\delta^2}{L^2}\label{E9.122}\\
+\frac{\gamma\delta}{v_0}&=&\frac{k_y\delta}{1-k_y^2\delta^2}\sqrt{(1-k_y^2\delta^2)\frac{2(1-\Gamma)}{\Gamma Lr}\frac{c_A^2c_s^2}{c_f^2v_0^2}\delta^2-\frac{1}{4}\left(\frac{\delta^2}{L^2}\right)^2}.\label{E9.123}
+\end{eqnarray}
+Parameters used for the plotting were chosen to match the analyses of both \emph{Voronkov, et al.} (1997) and \emph{Kalmoni, et al.} (2015). In particular, we utilized a plasma density $\rho_0=4.06\times 10^{-21}\rm kg/m^3$, and pressure of $P_04nPa$, and a magnetic field strength in the plasma sheet of $B_0=40\,$nT. Following \emph{Kalmoni, et al.} (2015), the shear flow region was taken to be localized with a width $\delta=650\,$km. The ion drift velocity in the region is approximately 
+$v_i=100\,$km/s. Gradient length scales are those of \emph{Voronkov, et al.} (1997), namely $L5000\,$km. For convenience, this implies speeds of $c_s=1380\,$km/s, $c_A=560\,$km/s, and $c_f=560\,$km/s.
+
+Growth rate reduction (growth rates and implications) Type of instability. . . Recent Kalmoni paper with paragraph 1 about stability, paragraph 2 and conclusions.
+
+Details: $R_E$ adjust Parameter Sensitivity Nonlinear Analysis Wolf/Xing for interchange stuff Wedge Conductivity Comments Bibliography, Proofread, ``/", Comments on dropping gravity and centrifugal velocity.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{thebibliography}{100}
+
+\bibitem{}
+Akasofu, S.--I. (1964). The development of the auroral substorm, \emph{Planet. Space Sci.} \textbf{12}, pp.~273--282, \url{https://doi.org/10.1016/0032-0633(64)90151-5}.
+
+\bibitem{}
+Angelopoulos, V., McFadden, J. P., Larson, D., Carlson, C. W., Mende, S. B., Frey, H., Phan, T., Sibeck, D. G., Glassmeier, K--H., Auster, U., Donovan, E., Mann, I. R., Rae, J., Russell, C. T., Runov, A., Zhou, X--Z. and Kepko, L. (2008a). Tail Reconnection triggering substorm Onset, \emph{Science} \textbf{321}, pp.~931--935, \url{https://doi.org/10.1126/science.1160495}.
+
+\bibitem{}
+Angelopoulos, V., Sibeck, D. G., Carlson, C. W., McFadden, J. P., Larson, D., Lin, R. P., Bonnell, J. W., Mozer, F. S., Ergun, R., Cully, C., Glassmeier, K--H., Auster, U., Roux, A., LeContel, O., Frey, S., Phan, T., Mende, Frey, H., Donovan, E., Russell, C. T., Strangeway, R., Liu, J., Mann, I. R., Rae, J., Raeder, J, Li, X., Liu, W., Singer, H. J., Sergeev, V. A., Apatenkov, S., Parks, G. Fillingim, M., Sigwarth, J. (2008b). First Results from the THEMIS Mission, \emph{Space Sci. Rev.} \textbf{141}, pp.~453--476, \url{https://doi.org/1007/s11214-008-9378-4}.
+
+\bibitem{}
+Burch, J. L. and Angelopoulos, V. (2008). The THEMIS mission, 
+\emph{Space Sci. Rev.} 141, pp. 1--583, \url{https://doi.org/10.1007/s11214-008-9474-5}.
+
+\bibitem{}
+Coppi, B., Laval, G. and Pellat, R. (1966). Dynamics of the geomagnetic tail, \emph{Phys. Rev. Lett.} \textbf{16}, p.~1207, \url{https://doi.org/10.1103/PhysRevLett.16.1207}.
+
+\bibitem{}
+De Zeeuw, D. L., Sazykin, S., Wolf, R. A., Gombosi, T. I., Ridley, A. J. and Toth, G. (2004). Coupling of a global MHD code and an inner magnetospheric model: Initial results. \emph{J. Geophys. Res.} \textbf{109}, p.~A12219,
+\url{https://doi.org/10.1029/2003JA010366}.
+
+\bibitem{}
+Derr, J., Horton, W. and Wolf, R. (2019). Shear flow--interchange instability in nightside magnetotail causes auroral beads as a signature of substorm onset, \emph{Plasma Phys.: Space Phys.}, 
+\url{https://arxiv.org/abs/1904.11056v1}.
+
+\bibitem{}
+Forsyth, C., Watt, C. E. J., Rae, I. J., Fazakerley, A. N., Kalmoni, N. M. E., Freeman, M. P., Boakes, P. D., Nakamura, R., Dandouras, I., Kistler, L. M., Jackman, C. M., Coxon, J. C. and Carr, C. M. (2014). Increases in plasma sheet temperature with solar wind driving during substorm growth phases, \emph{Geophys. Res. Lett.} \textbf{41}, 
+pp.~8713--8721, \url{https://doi.org/10.1002/2014GL062400}.
+
+\bibitem{}
+Friedrich, E., Samson, J. C. and Voronkov, I. (2001). Ground--based observations and plasma instabilities in auroral substorms. \emph{Phys. Plasmas} \textbf{8}, pp.~1104--1110, \url{https://doi.org/10. 1063/1.1355678}.
+
+\bibitem{}
+Gallardo--Lacourt, B., Nishimura, Y., Lyons, L. R., Ruohoniemi, J. M., Donovan, E., Angelopoulos, V., McWilliams, K. A. and Nishitani, N. (2014). Ionospheric flow structures associated with auroral beading at substorm auroral onset, \emph{J. Geophys. Res.: Space Phys.} \textbf{119}, pp.~9150--9159, \url{https://doi.org/10.1002/2014JA020298}.
+
+\bibitem{}
+Kalmoni, N. M. E., Rae, I. J., Watt, C. E. J., Murphy, K. R., Forsyth, C. and Owen, C. J. (2015). Statistical characterization of the growth and spatial scales of the substorm onset arc, \emph{J. Geophys. Res.: Space Phys.} \textbf{120}, pp.~8503--8516, \url{https://doi.org/10.1002/ 2015JA021470}.
+
+\bibitem{}
+Kalmoni, N. M. E., Rae, I. J., Murphy, K. R., Forsyth, C., Watt, C. E. J. and Owen, C. J. (2017). 
+Statistical azimuthal structuring of the substorm onset arc: Implications for the onset mechanism, \emph{Geophys. Res. Lett.} \textbf{44}, pp.~2078--2087, \url{https://doi.org/10.1002/2016GL071826}.
+
+\bibitem{}
+Kivelson, M. G. and Russell, C. T. (1995). \emph{Introduction to Space Physics} (Cambridge Univ. Press) ISBN:0--521--45714--9.
+
+\bibitem{}
+McPherron, R. L., Hsu, T. S., Kissinger, J., Chu, X. and Angelopoulos, V. (2011). Characteristics of plasma flows at the inner edge of the plasma sheet, \emph{J. Geophys. Res.} \textbf{116}, p.~A00I33, 
+\url{https://doi.org/10.1029/2010JA015923}.
+
+\bibitem{}
+Mende, S. B., Harris, S. E., Frey, H. U., Angelopoulos, V., Russell, C. T., Donovan, E., Jackel, B., Greffen, M. and Peticolas, L. M. (2008). The THEMIS Array of ground--based observatories for the study of auroral substorms, 
+\emph{Space Sci. Rev.} \textbf{141}, pp.~357--387, \url{https: //dx.doi.org/10.1007/s11214-008-9380-x}.
+
+\bibitem{}
+Motoba, T., Hosokawa, K., Kadokura, A. and Sato, N. (2012). Magnetic conjugacy of northern and southern auroral beads, \emph{Geophys. Res. Lett.} \textbf{39}, p.~L08108, \url{https://doi.org/10.1029/ 2012GL051599}.
+
+\bibitem{}
+Nishimura, Y., Lyons, L. R., Nicolls, M. J., Hampton, D. L., Michell, R. G., Samara, M., Bristow, W. A., Donovan, E. F., Spanswick, E., Angelopoulos, V. and Mende, S. B. (2014). Coordinated ionospheric observations indicating coupling between preonset flow bursts and waves that lead to substorm onset, \emph{J. Geophys. Res.: Space Phys.} 
+\textbf{119}, p.~3333--3344, \url{https: //doi.org/10.1002/2014JA019773}.
+
+\bibitem{}
+Nishimura, Y., Yang, J., Pritchett, P. L., Coroniti, F. V., Donovan, E. F., Lyons, L. R., Wolf, R. A., Angelopoulos, V. and Mende, S. B. (2016). Statistical properties of substorm auroral onset beads/rays, \emph{J. Geophys. Res.: Space Phys.} \textbf{121}, pp.~866--8676, \url{https://doi.org/10. 1002/2016JA022801}.
+
+\bibitem{}
+Rae, I. J., Watt, C. E. J., Mann, I. R., Murphy, K. R., Samson, J. C., Kabin, K. and Angelopoulos, V. (2010). Optical characterization of the growth and spatial structure of a substorm onset arc, \emph{J. Geophys. Res.} \textbf{115}, 
+p.~A10222, \url{https://doi.org/10.1029/ 2010JA015376}.
+
+\bibitem{}
+Sergeev, V., Angelopoulos, V., Kubyshkina, M., Donovan, E., Zhou, X.--Z., Runov, A. and Nakamura, R. (2011). Substorm growth and expansion onset as observed with ideal ground--spacecraft THEMIS coverage, \emph{J. Geophys. Res.: Space Phys.} \textbf{116}, p.~A00I26, \url{https://doi.org/10.1029/2010JA015689}.
+
+\bibitem{}
+Tsyganenko, N. A. (1995). Modeling the Earth's magnetospheric magnetic field confined within a realistic magnetopause, \emph{J. Geophys. Res.} \textbf{100}, pp.~5599--5612, \url{https://doi.org/ 10.1029/94JA03193}.
+
+\bibitem{}
+Tsyganenko, N. A. (1996). Effects of the solar wind conditions in the global magnetospheric configurations as deduced from databased field models (Invited), International Conference on Substorms, Proceedings of the 3rd International Conference held in Versailles, 12--17 May 1996. (Edited by E. J. Rolfe and B. Kaldeich). ESA SP--389. Paris: European Space Agency, 1996., p.~181.
+
+\bibitem{}
+Voronkov, I., Rankin, R., Frycz, P., Tikhonchuk, V. T. and Samson, J. C. (1997). Coupling of shear flow and pressure gradient instabilities, \emph{J. Geophys. Res.} \textbf{102}, pp.~9639--9650, \url{https://doi.org/10.1029/97JA00386}.
+
+\bibitem{}
+Wolf, R. A. (1995). Physics of the magnetosphere (course notes).
+
+\bibitem{}
+Wolf, R. A., Toffoletto, F. R., Schutza, A. M. and Yang, J. (2018). Buoyancy waves in earth's magnetosphere: Calculations for a 2D wedge magnetosphere, \emph{J. Geophys. Res.: Space Phys.} \textbf{123}, pp.~3548--3564, 
+\url{https://doi.org/10.1029/2017JA025006}.
+
+\bibitem{}
+Yamamoto, T. (2008). A linear analysis of the hybrid Kelvin--Helmholtz/Rayleigh--Taylor instability in an electrostatic magnetosphere--ionosphere coupling system, \emph{J. Geophys. Res.} \textbf{113}, p.~A06206, \url{https://doi.org/10.1029/2007JA012850}.
+
+\bibitem{} 
+Yamamoto, T. (2009). Hybrid Kelvin--Helmholtz/Rayleigh--Taylor instability in the plasma sheet, \emph{J. Geophys. Res.} \textbf{114}, p.~A06207, \url{https://doi.org/10.1029/2008JA013760}.
+
+\bibitem{}
+Zou, S., Moldwin, M. B., Lyons, L. R., Nishimura, Y., Hirahara, M., Sakanoi, T., Asamura, K., Nicolls, M. J., Miyashita, Y., Mende, S. B. and Heinselman, C. J. (2010). Identification of substorm onset location and the preonset  sequence using REIMEI, THEMIS BGO, PFISR, and Geotail, \emph{J.Geophys. Res.} \textbf{115}, \url{https://doi.org/10.1029/2010JA015520}.
+
+\end{thebibliography}
+
+\end{document}
