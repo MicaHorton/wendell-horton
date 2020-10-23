@@ -2,9 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Route} from "react-router-dom";
 import './App.css';
 
-import Navbar from "./components/navbar.js";
+import Header from "./components/header.js";
+import Navpage from "./components/navpage.js";
+
 import Intro from "./components/intro.js";
 import Prologue from "./components/prologue.js";
+
 import Chapter1 from "./components/chapter1.js";
 import Chapter2 from "./components/chapter2.js";
 import Chapter3 from "./components/chapter3.js";
@@ -22,10 +25,11 @@ function App() {
   return (
     
     <Router>
-      <Route path='/' component={Navbar}/>
+      <Route path='/' component={Header}/>
+      <Route path='/navpage' component={Navpage}/>
+
       <Route path='/' exact component={Intro}/>
       <Route path='/prologue' exact component={Prologue}/>
-
       <Route path='/chapter1' exact component={Chapter1}/>
       <Route path='/chapter2' exact component={Chapter2}/>
       <Route path='/chapter3' exact component={Chapter3}/>

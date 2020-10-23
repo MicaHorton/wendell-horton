@@ -41,15 +41,14 @@ body {
 
 .toggle .fa-bars {
     font-size: 45px;
-    color: black;
 
 }
-
 
 .toggle .fa-times {
     color: white;
     font-size: 60px;
-    margin-top: 25px;
+    margin-top: -7px;
+    margin-left: -7px;
     -webkit-text-stroke: 4px rgb(96, 70, 70);
 
     position: relative;
@@ -58,13 +57,22 @@ body {
 
 
 
-/* Navpage Styles */
+/* Overlay Styles */
+.overlay:not(.overlay-active) {
+    display: none;
+}
 
+.nav:not(.overlay-active) {
+    display: none;
+}
 
-.navpage {
+.nav {
     display: flex;
     flex-direction: column;
     text-align: center;
+
+    position: relative;
+    z-index: 1;
 
 }
 
@@ -76,11 +84,14 @@ body {
 
 }
 
-.header-hidden {
-    display: none;
-    color: blue;
-}
+.overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
 
+    background-color: rgb(96, 70, 70);
+    z-index: 1;
+}
 
 /* Content Styles */
 .content {

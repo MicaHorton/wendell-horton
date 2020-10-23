@@ -13,6 +13,7 @@ export default class Navbar extends Component {
 
     toggleNav() {
         this.setState({overlay: !this.state.overlay});
+        document.body.style.backgroundColor = "red"
     }
 
     render () {
@@ -33,7 +34,6 @@ export default class Navbar extends Component {
                 </button>
                 <h1>Wendell Horton</h1>           
             </div>
-
             
             <nav className={` nav ${this.state.overlay && 'overlay-active'} `}>
                 <Link className='nav-item' to='/' onClick={() => this.toggleNav()}>Introduction</Link>
