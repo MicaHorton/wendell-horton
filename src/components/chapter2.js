@@ -32,6 +32,7 @@ export default class Chapter2 extends Component {
                 <h2>Light–weight H–bombs</h2>
                     <p>Continued secret development of light–weight H–bombs and the Strategic Defense Initiative.</p>
 
+                <h2>Bibliography</h2>
                 <p>Rhodes, R. (2005). <span><em>Dark Sun</em></span>, ISBN:978–0–684–82414–7. 2013, American Institute of Physics).</p>
             </div>     
             

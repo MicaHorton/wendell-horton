@@ -14,6 +14,9 @@
     - change class to ClassName
     - add quotes to items inside of {} to get rid of unexpected token errors
 
+error: $\rm SiO_2$
+fixed: $\rm {"SiO_2"}$
+
 # Finished Chapters
 - [ ] 1
 - [ ] 2
